@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "DS"  # your top-level package name
+version = "0.1.0"
+description = "My custom ML models and DS utilities"
+authors = [{name = "deep"}]
+dependencies = ["numpy>=1.23", "pandas", "matplotlib"]
+
+[tool.setuptools.packages.find]
+where = ["."]

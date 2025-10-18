@@ -19,9 +19,9 @@ from sklearn.metrics import r2_score
 
 print("SimpleGD R2:", r2_score(y_test, y_pred))
 
-from sklearn.linear_model import SGDRegressor
+from sklearn.linear_model import LinearRegression
 
-mdl = SGDRegressor(max_iter=1000, eta0=0.01, learning_rate='constant', penalty=None, random_state=43)
+mdl = LinearRegression()
 mdl.fit(x_train, y_train)
 
 ypred = mdl.predict(x_test)

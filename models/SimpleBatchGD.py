@@ -1,6 +1,6 @@
 import numpy as np
 
-class SimpleGD:
+class SimpleBatchGD:
     def __init__(self,learning_rate = 0.1,epochs = 100):
         self.m = 0
         self.b = 0

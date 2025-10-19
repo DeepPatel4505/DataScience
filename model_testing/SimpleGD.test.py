@@ -8,9 +8,9 @@ plt.scatter(x, y)
 from sklearn.model_selection import train_test_split
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=3)
 
-from models import SimpleGD
+from models import SimpleBatchGD
 
-model = SimpleGD(learning_rate=0.01, epochs=1000)
+model = SimpleBatchGD(learning_rate=0.01, epochs=1000)
 model.fit(x_train, y_train)
 
 y_pred = model.predict(x_test)

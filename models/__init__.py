@@ -1,5 +1,5 @@
-from .SimpleGD import SimpleGD
+from .SimpleBatchGD import SimpleBatchGD
 from .SimpleLR import SimpleLR
 from .MultiLR import MultiLR
 
-__all__ = ["SimpleGD", "SimpleLR", "MultiLR"]
+__all__ = ["SimpleBatchGD", "SimpleLR", "MultiLR"]
